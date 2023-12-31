@@ -1,20 +1,14 @@
-import React, { useState } from "react";
-import BubbleSort from "./BubbleSort";
+import React from "react";
+import { Provider } from "react-redux";
+import store from "./redux/store";
+import BubbleSort from "./components/BubbleSort";
 import "./BubbleSort.css";
 
 function App() {
-  const [userInput, setUserInput] = useState([]);
-
   return (
-    <>
-      <BubbleSort userInput={userInput} />
-      <input
-        className="input-field"
-        placeholder="Enter Unsorted Numbers"
-        type="text"
-        onChange={(e) => setUserInput(e.target.value)}
-      ></input>
-    </>
+    <Provider store={store}>
+      <BubbleSort />
+    </Provider>
   );
 }
 

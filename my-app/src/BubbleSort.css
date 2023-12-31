@@ -12,8 +12,8 @@
 .button-style {
   padding: 10px;
   font-size: 16px;
-  margin-top: 50px;
-  margin-left: 20px;
+  margin-top: 10px;
+  margin-left: 620px;
   margin-right: 10px;
   background-color: green;
   color: white;
@@ -23,8 +23,42 @@
 }
 
 .input-field {
+  margin-top: 20px;
+  margin-left: 540px;
+  width: 250px;
+
   padding: 10px;
   font-size: 16px;
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+.array-bar {
+  margin-left: 300px;
+  margin-bottom: 20px;
+  width: 28px;
+  background-color: blue;
+  position: absolute;
+  bottom: 0px;
+}
+
+.block_id {
+  position: absolute;
+  color: black;
+  margin-top: -20px;
+  width: 100%;
+  text-align: center;
+}
+
+.array-bar.swapping {
+  background-color: #e74c3c;
+}
+
+.array-bar.sorted-bar {
+  background-color: #27ae60;
+}
+
+.boldAndMargin {
+  font-weight: bold;
+  margin-left: 10px;
 }
